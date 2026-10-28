@@ -43,3 +43,5 @@
 主要繳交為 GitHub 與 web；PDF、逐字對話與資訊圖表為選用附件。遠端部署完成與本機可執行性分別列示；自訂 CSV 遠端訓練需另行連接 API。
 
 部署目標：https://maplenight0918.github.io/HW2-Multiple-Linear-regression/ 。設定與恢復發布方式見 WEB_DEPLOYMENT.md。
+
+公開 ZIP 已實際解壓、核對全部 SHA-256，從乾淨目錄重新建置並執行 50 Startups CSV 訓練；證據見 outputs/web/public_export_validation.json。
