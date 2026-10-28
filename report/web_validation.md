@@ -14,8 +14,8 @@
 | GitHub Pages 建置 | PASS | scripts/check_web_artifacts.py、scripts/build_pages.py；僅公開分析本文 |
 | GitHub Pages 子路徑與後端未配置狀態 | PASS | outputs/web/static_validation.json；實際瀏覽器載入兩題，錯誤提示明確 |
 | GitHub repository | PASS | GitHub API 於 2026-10-28 回傳 200；使用者已建立指定公開 repository |
-| 原始碼 push | PENDING | outputs/web/github_deployment.json；尚未取得可用帳號認證 |
-| 公開 Pages 網址驗證 | PENDING | 需 repository 登入與第一次部署成功後檢查 |
+| 原始碼 push | PASS | GitHub 遠端 main 已推送；檔案樹與乾淨歷史已核對，無私人原文附件 |
+| 公開 Pages 網址驗證 | PASS | Actions 部署成功；25 個公開檔案 HTTP 200／SHA-256 一致；兩題互動、預測工具、手機排版均由真實遠端瀏覽器驗證 |
 | Render 遠端 API | PENDING | 本機完整 API 已驗證；雲端帳號與 API_BASE_URL 尚未設定 |
 | Flood 真實指標 | PASS | outputs/web/browser_validation.json |
 | flood 圖表 | PASS | outputs/web/browser_validation.json |
@@ -42,6 +42,8 @@
 
 主要繳交為 GitHub 與 web；PDF、逐字對話與資訊圖表為選用附件。遠端部署完成與本機可執行性分別列示；自訂 CSV 遠端訓練需另行連接 API。
 
-部署目標：https://maplenight0918.github.io/HW2-Multiple-Linear-regression/ 。設定與恢復發布方式見 WEB_DEPLOYMENT.md。
+線上網站：https://maplenight0918.github.io/HW2-Multiple-Linear-regression/ 。設定與恢復發布方式見 WEB_DEPLOYMENT.md。
 
 公開 ZIP 已實際解壓、核對全部 SHA-256，從乾淨目錄重新建置並執行 50 Startups CSV 訓練；證據見 outputs/web/public_export_validation.json。
+
+遠端瀏覽器證據：outputs/web/pages_browser_validation.json；部署工作流程與版本：outputs/web/github_deployment.json。Chromium 在此環境使用 HTTPS／HTTP/1.1 驗證，無 JavaScript 錯誤或失敗資源。兩題的四種篩選、五組圖表及單筆預測均已操作。

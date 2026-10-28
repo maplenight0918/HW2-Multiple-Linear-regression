@@ -1,12 +1,18 @@
 {
-  "checked_at": "2026-10-28T01:03:08.855042+00:00",
+  "checked_at": "2026-10-28T01:29:27.770871+00:00",
   "repository": "https://github.com/maplenight0918/HW2-Multiple-Linear-regression",
   "site_url": "https://maplenight0918.github.io/HW2-Multiple-Linear-regression/",
-  "repository_pushed": false,
-  "pages_verified": false,
-  "error": "GitHub CLI 已安裝並實際執行 auth status：尚未登入 GitHub；沒有可用推送／Pages 設定憑證。",
   "repository_exists": true,
+  "repository_pushed": true,
+  "pages_verified": true,
   "repository_http_status": 200,
-  "remote_size": 0,
-  "pages_http_status": 404
+  "pages_http_status": 200,
+  "commit": "3bd1cb3d7fdd75b592cabe12ce53c7b294767b6b",
+  "workflow_url": "https://github.com/maplenight0918/HW2-Multiple-Linear-regression/actions/runs/40614755846",
+  "workflow_conclusion": "success",
+  "build_type": "workflow",
+  "verified_assets": 25,
+  "browser_evidence": "outputs/web/pages_browser_validation.json",
+  "private_files_in_remote_tree": false,
+  "note": "此紀錄對應已實測成功的公開版本；後續文件更新沿用相同模型與前端。自訂 CSV 後端仍未配置。"
 }

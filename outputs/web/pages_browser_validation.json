@@ -1,0 +1,134 @@
+{
+  "checked_at": "2026-10-28T01:28:28.285673+00:00",
+  "site_url": "https://maplenight0918.github.io/HW2-Multiple-Linear-regression/",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "遠端靜態檔案",
+      "status": "PASS",
+      "evidence": "25 個檔案 HTTP 200 且 SHA-256 與本版建置一致"
+    },
+    {
+      "check": "flood 線上互動",
+      "status": "PASS",
+      "evidence": {
+        "raw_features": 20,
+        "charts": [
+          {
+            "id": "actual-chart",
+            "width": 493,
+            "height": 270,
+            "valid": true
+          },
+          {
+            "id": "residual-chart",
+            "width": 493,
+            "height": 270,
+            "valid": true
+          },
+          {
+            "id": "interval-chart",
+            "width": 1046,
+            "height": 300,
+            "valid": true
+          },
+          {
+            "id": "model-chart",
+            "width": 493,
+            "height": 270,
+            "valid": true
+          },
+          {
+            "id": "coefficient-chart",
+            "width": 493,
+            "height": 270,
+            "valid": true
+          }
+        ],
+        "selection_methods": 4,
+        "predictor_formula": true,
+        "empty_input_rejected": true,
+        "mobile_no_overflow": true
+      }
+    },
+    {
+      "check": "housing 線上互動",
+      "status": "PASS",
+      "evidence": {
+        "raw_features": 19,
+        "charts": [
+          {
+            "id": "actual-chart",
+            "width": 493,
+            "height": 270,
+            "valid": true
+          },
+          {
+            "id": "residual-chart",
+            "width": 493,
+            "height": 270,
+            "valid": true
+          },
+          {
+            "id": "interval-chart",
+            "width": 1046,
+            "height": 300,
+            "valid": true
+          },
+          {
+            "id": "model-chart",
+            "width": 493,
+            "height": 270,
+            "valid": true
+          },
+          {
+            "id": "coefficient-chart",
+            "width": 493,
+            "height": 270,
+            "valid": true
+          }
+        ],
+        "selection_methods": 4,
+        "predictor_formula": true,
+        "empty_input_rejected": true,
+        "mobile_no_overflow": true
+      }
+    },
+    {
+      "check": "未配置自訂 CSV 後端時的提示",
+      "status": "PASS",
+      "evidence": "自訂分析服務尚未連線。請在「分析服務連線」設定已部署的服務網址，或先探索兩個內建題目。"
+    }
+  ],
+  "pageerrors": [],
+  "failed_responses": [],
+  "remote_sha256": {
+    "app.js": "847ccce858e9bc9c84b51922f2a8230e172bb3b9b971dba5f2030fc3e8515d71",
+    "config.js": "5a2e264534b609a04d2aa3720d14e524d683e1b8d3ef3aa49ad9bc14da7e8b14",
+    "data/flood.json": "2a299bf027d892f4fafa372f866efffa8b005df7d4a0ccd960aa07b45d597e66",
+    "data/housing.json": "7935654dfe4535daefce8ca281f97c3702d9dbb1873ff99a71ae9bfe33a48d7e",
+    "data/research.json": "43cd3505c3464a67ed463908ab10b2e87dbc0d7179f31632d6ef8cb00e1b2f2f",
+    "downloads/7114056093_hw2.ipynb": "f2fe525de5353d3f5c69028b5ee019c2194da7aebb41db3d09d18e66e503e953",
+    "downloads/model_comparison.csv": "c32b5b7f4a00047fc4dec233f4bf11a07dea395b9e602d3aa7bea99ae281a2e7",
+    "downloads/report_analysis.pdf": "b696738402877c4d53366273cce6d817d90432fd4a0760cfd6fcd20a2389e643",
+    "downloads/sources.md": "45dfbf11d3a68140c5b02ca780dbcd1c7f2c9a538c567dbe3a454daac659f962",
+    "figures/01_target_distribution.png": "3776b6c3e8717f9a3f861145aadb36cddcaeb059f57623064343db1cc5aae787",
+    "figures/02_feature_distributions.png": "6e94117cb1c9868c932b9fa14bf69d8b031a2ff8756bcb951793fad997bd008a",
+    "figures/03_correlation_heatmap.png": "30a69a974a1d54c291ac1ef0b3e1c80b06974de93c9f0b07867df5ba82a2792f",
+    "figures/04_feature_target.png": "4ef96213c3565aedbbadda177fab34b2b44a39b4f8c9a95affbd7e13b151dea6",
+    "figures/05_boxplots.png": "9010bcaab51ab24264e38d9a0986dd22337b295be50c05ea8f6779a7ec70c28e",
+    "figures/06_predictions_residuals.png": "1d438c78a88be3bfabe04459d45c79460e192f5f77bb5259c06928c9c18b1d80",
+    "figures/07_residual_distribution_qq.png": "2a7837777b58df78538799e89cb7736331e79012e53c3d4e8839bd15c0ffdf61",
+    "figures/08_coefficients.png": "faea74ffef48c3fce1307b5e7c7d17f697403bc8915a281cf7b05f702cc4a4bf",
+    "figures/09_model_comparison.png": "3b8b718861f4fc940011c952410a6d91e016f0321b027228a91916b9c9feb1e9",
+    "figures/10_prediction_intervals.png": "c0dfc900163fefef12856b8e1b0e6f8c7b380e5df9b62c6450801abd0e8fcb58",
+    "index.html": "538929e5c313d5d56889b8e467e2c74b489ab6e97253ae8d86976a1e3d3dd373",
+    "style.css": "17a874fbebf91a6cb42f49e8de29e7ed58558f332cff133e1083431e364d2537",
+    "vendor/CHARTJS_LICENSE.txt": "5a0877ad6d818529be4f33009d0942cdf7e2ed7656156f4aba7308459a546030",
+    "vendor/NOTO_LICENSE.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "vendor/NotoSansCJKtc-Regular.woff": "fab23195716dd66d9418fe4a4c6239eba256253e667cdc02d02e802f1e2fce2b",
+    "vendor/chart.umd.min.js": "d2af8974e95271638772e9e9524db5b9a6f58d6ec2d5d781400447b4a31c681e"
+  },
+  "browser_transport": "Chromium HTTPS／HTTP/1.1（此環境停用 QUIC 與 HTTP/2）",
+  "custom_csv_remote_training": "PENDING：API_BASE_URL 尚未設定；不將本機訓練成功當作遠端服務已上線。"
+}

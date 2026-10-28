@@ -2,6 +2,8 @@
 
 本專案依新版作業，以 GitHub＋網站作為主要展示。兩個內建題目直接讀取實際計算的結果；自訂 CSV 由 FastAPI 執行 Python 分析。原有 Notebook、完整 PDF 與對話附件保留在本地繳交包。
 
+已上線：[HW2 迴歸研究室](https://maplenight0918.github.io/HW2-Multiple-Linear-regression/)。原始碼：[GitHub repository](https://github.com/maplenight0918/HW2-Multiple-Linear-regression)。25 個公開檔案與建置 SHA-256 一致，線上兩題、圖表、新樣本預測與手機排版已驗證。自訂 CSV 遠端重新訓練仍需配置下述 FastAPI 服務。
+
 ## 本機完整執行
 
 建議 Python 3.11：
@@ -26,7 +28,7 @@ python scripts/check_web_artifacts.py
 python scripts/build_pages.py
 ```
 
-使用者已建立上述 repository。安裝 GitHub CLI 並於自己的終端機完成 `gh auth login` 後，在**完整本地研究專案**執行：
+上述 repository 已發布，以下為後續更新方式。安裝 GitHub CLI 並於自己的終端機完成 `gh auth login --scopes workflow` 後，在**完整本地研究專案**執行：
 
 ```bash
 python scripts/publish_github.py
@@ -34,7 +36,7 @@ python scripts/publish_github.py
 
 此腳本會先檢查登入、驗證公開成果、白名單匯出到暫存資料夾，再 clone 指定 repository；保留遠端歷史、不使用 force push。推送 main 後設定 Pages 為 GitHub Actions，記錄實際回應至 `outputs/web/github_deployment.json`。第一次啟用 Pages 需要帳號具有 repository 管理與 Pages 設定權限。腳本不寫入或輸出 token，也不把本地私人 Git 歷史帶上遠端。
 
-若已在公開匯出資料夾，可手動使用 Git 推送該乾淨版本，並至 repository 的 **Settings → Pages → Build and deployment → Source** 選擇 **GitHub Actions**。在 **Actions → 驗證並部署 HW2 網站 → Run workflow** 啟動部署。工作流程成功後網站目標為：
+若已在公開匯出資料夾，可手動使用 Git 推送該乾淨版本，並至 repository 的 **Settings → Pages → Build and deployment → Source** 選擇 **GitHub Actions**。在 **Actions → 驗證並部署 HW2 網站 → Run workflow** 啟動部署。網站網址為：
 
 https://maplenight0918.github.io/HW2-Multiple-Linear-regression/
 
@@ -94,6 +96,8 @@ HW2_TEST_URL=http://127.0.0.1:8000 python scripts/check_web_browser.py
 
 Playwright 是瀏覽器 QA 的選用依賴，安裝 `playwright==1.60.0` 並執行 `python -m playwright install chromium`。若瀏覽器安裝於自訂位置，設定 `PLAYWRIGHT_BROWSERS_PATH`；不需要將它加入 Render 生產依賴。
 
-測試證據在 `outputs/logs/web_pytest.xml`、`outputs/web/browser_validation.json` 與 `report/web_validation.md`。GitHub／Render 的遠端可用性需在實際部署後另外驗證。
+測試證據在 `outputs/logs/web_pytest.xml`、`outputs/web/browser_validation.json` 與 `report/web_validation.md`。GitHub Pages 已完成遠端驗證，證據見 outputs/web/pages_browser_validation.json；Render 自訂 CSV 服務尚未部署。
 
 官方部署文件：[GitHub Pages 自訂工作流程](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)、[Render FastAPI](https://render.com/docs/deploy-fastapi)。部署設定於 2026-10-28 查核。
+
+線上驗證：先於乾淨公開 repository 執行 `python scripts/build_pages.py`，再於完整研究專案執行 `python scripts/check_live_pages.py --expected-root public_repository/dist`。工具會比對所有公開資產雜湊，並操作兩題、篩選、預測、手機排版及未連後端提示。

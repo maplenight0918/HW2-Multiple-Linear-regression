@@ -7,11 +7,11 @@ import zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 FILES=['config.json','deployment.json','requirements.txt','requirements-web.txt','render.yaml','NOTICE.md','WEB_DEPLOYMENT.md',
-       'scripts/export_public_repo.py','scripts/build_web_data.py','scripts/build_pages.py','scripts/check_web_artifacts.py','scripts/check_web_browser.py','scripts/check_pages_browser.py',
+       'scripts/export_public_repo.py','scripts/build_web_data.py','scripts/build_pages.py','scripts/check_web_artifacts.py','scripts/check_web_browser.py','scripts/check_pages_browser.py','scripts/check_live_pages.py',
        'scripts/setup_assets.py','scripts/create_notebook.py','scripts/publish_github.py',
        'research/sources.md','research/notebooklm_summary.md','research/notebooklm_prompt.md','research/king_county_metadata.json',
        'research/kaggle_metadata.json','research/data_provenance.md',
-       'outputs/web/github_deployment.json','outputs/web/housing_audit.json','outputs/web/housing_models.csv','outputs/web/browser_validation.json',
+       'outputs/web/github_deployment.json','outputs/web/pages_browser_validation.json','outputs/web/housing_audit.json','outputs/web/housing_models.csv','outputs/web/browser_validation.json',
        'report/web_validation.md','assets/font_license.txt','tests/fixtures/50_Startups.csv','tests/test_web.py',
        'outputs/logs/pytest.xml','outputs/logs/web_pytest.xml','outputs/logs/all_tests_web.log',
        'outputs/web/static_validation.json','outputs/web/visual_review.json','outputs/web/website_preview.png']
@@ -42,7 +42,9 @@ PUBLIC_README='''# HW2｜迴歸研究室
 
 ## 網站
 
-GitHub repository：`maplenight0918/HW2-Multiple-Linear-regression`。Pages 工作流程成功後，網站網址為 `https://maplenight0918.github.io/HW2-Multiple-Linear-regression/`。是否上線以 repository 的 Actions／Pages 實際部署狀態為準。
+**[開啟互動網站](https://maplenight0918.github.io/HW2-Multiple-Linear-regression/)** · [GitHub 原始碼](https://github.com/maplenight0918/HW2-Multiple-Linear-regression)
+
+GitHub Pages 已部署並完成實際瀏覽器驗證：兩題、互動圖表、即時預測、手機排版與下載檔正常。自訂 CSV 的線上重新訓練仍需連接 FastAPI；本機完整分析已通過驗證。
 
 - 下拉切換兩個回歸問題。
 - 自訂 CSV 網址與檔案上傳，可選 Target 及輸入特徵。

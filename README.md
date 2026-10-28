@@ -20,7 +20,9 @@
 
 ## 網站
 
-GitHub repository：`maplenight0918/HW2-Multiple-Linear-regression`。Pages 工作流程成功後，網站網址為 `https://maplenight0918.github.io/HW2-Multiple-Linear-regression/`。是否上線以 repository 的 Actions／Pages 實際部署狀態為準。
+**[開啟互動網站](https://maplenight0918.github.io/HW2-Multiple-Linear-regression/)** · [GitHub 原始碼](https://github.com/maplenight0918/HW2-Multiple-Linear-regression)
+
+GitHub Pages 已部署並完成實際瀏覽器驗證：兩題、互動圖表、即時預測、手機排版與下載檔正常。自訂 CSV 的線上重新訓練仍需連接 FastAPI；本機完整分析已通過驗證。
 
 - 下拉切換兩個回歸問題。
 - 自訂 CSV 網址與檔案上傳，可選 Target 及輸入特徵。
