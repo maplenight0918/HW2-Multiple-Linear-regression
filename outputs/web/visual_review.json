@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-28T01:03:08.855042+00:00",
+  "reviewed": true,
+  "scope": "Pages 子路徑桌面全頁、頁首、兩題圖表與手機排版；已移除箭頭標誌且 GitHub 連結指向指定 repository。",
+  "findings": [
+    "中文可讀；全頁圖表、說明、表格與來源完整",
+    "係數長條相近是真實數據；標示六位小數及統計解釋",
+    "頁面無水平溢出；模型表格使用區塊內捲動",
+    "PDF 下載已同步包含第二題及新版要求的 32 頁本文"
+  ],
+  "preview_sha256": "6af0db3984c8ab8b56ac79722c4ef591d6452a24869b90845c67909b4c20bceb",
+  "source_sha256": {
+    "web/index.html": "538929e5c313d5d56889b8e467e2c74b489ab6e97253ae8d86976a1e3d3dd373",
+    "web/style.css": "17a874fbebf91a6cb42f49e8de29e7ed58558f332cff133e1083431e364d2537",
+    "web/app.js": "847ccce858e9bc9c84b51922f2a8230e172bb3b9b971dba5f2030fc3e8515d71"
+  }
+}

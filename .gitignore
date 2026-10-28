@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+dist/
+data/raw/
+data/processed/*.npz
+outputs/models/
+outputs/submission.csv
+outputs/tables/test_predictions.csv
+*.zip
+assets/*.otf
+assets/*.ttf

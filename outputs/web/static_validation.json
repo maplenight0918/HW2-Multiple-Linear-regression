@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-28T01:04:14.903311+00:00",
+  "scope": "本機模擬 GitHub Pages 專案子路徑，並非遠端上線證據",
+  "subpath": "http://127.0.0.1:44343/HW2-Multiple-Linear-regression/",
+  "checks": [
+    "flood：正確欄數與五組互動圖表",
+    "housing：正確欄數與五組互動圖表",
+    "指定 repository 連結正確",
+    "中文字型及下載檔可由子路徑載入",
+    "兩題手機版無頁面水平溢出",
+    "未連接後端時明確提示，沒有假分析結果",
+    "Flood 前三項係數提示顯示不同的六位小數"
+  ],
+  "pageerrors": []
+}

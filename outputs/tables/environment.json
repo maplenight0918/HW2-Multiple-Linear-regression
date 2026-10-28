@@ -1,0 +1,48 @@
+{
+  "python": "3.9.12 (main, Mar 29 2023, 09:45:36) \n[GCC 9.4.0]",
+  "platform": "Linux-4.15.0-213-generic-x86_64-with-glibc2.31",
+  "packages": {
+    "numpy": "1.24.2",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.6",
+    "matplotlib": "3.9.4",
+    "joblib": "1.5.3",
+    "PyMuPDF": "1.26.5",
+    "nbformat": "5.9.0",
+    "nbclient": "0.8.0",
+    "pytest": "8.4.2",
+    "requests": "2.32.5"
+  },
+  "config": {
+    "student_id": "7114056093",
+    "seed": 42,
+    "target": "FloodProbability",
+    "id_column": "id",
+    "test_size": 0.2,
+    "calibration_fraction_of_development": 0.2,
+    "cv_sample_size": 80000,
+    "cv_folds": 5,
+    "nominal_coverage": 0.95,
+    "dataset_version": "johnwicknice/playground-series version 1, 2024-05-18",
+    "mirror_download": "https://www.kaggle.com/api/v1/datasets/download/johnwicknice/playground-series?datasetVersionNumber=1"
+  },
+  "seconds": 104.6826581954956,
+  "model_parameters": {
+    "LR_All": "Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),\n                ('scaler', StandardScaler()), ('selector', 'passthrough'),\n                ('model', LinearRegression())])",
+    "LR_KBest_15": "Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),\n                ('scaler', StandardScaler()),\n                ('selector',\n                 SelectKBest(k=15,\n                             score_func=<function f_regression at 0x7f041bcf5670>)),\n                ('model', LinearRegression())])",
+    "LR_RFE_15": "Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),\n                ('scaler', StandardScaler()),\n                ('selector',\n                 RFE(estimator=LinearRegression(), n_features_to_select=15,\n                     step=5)),\n                ('model', LinearRegression())])",
+    "LR_LassoSelect": "Pipeline(steps=[('selector', LassoCVSelector()),\n                ('imputer', SimpleImputer(strategy='median')),\n                ('scaler', StandardScaler()), ('model', LinearRegression())])",
+    "Ridge_0.1": "Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),\n                ('scaler', StandardScaler()), ('selector', 'passthrough'),\n                ('model', Ridge(alpha=0.1))])",
+    "Lasso_1e-05": "Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),\n                ('scaler', StandardScaler()), ('selector', 'passthrough'),\n                ('model', Lasso(alpha=1e-05, max_iter=10000))])",
+    "HGB_Summary": "Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),\n                ('summary', AddRowSummary()),\n                ('model',\n                 HistGradientBoostingRegressor(early_stopping=False,\n                                               l2_regularization=10,\n                                               learning_rate=0.08, max_iter=140,\n                                               max_leaf_nodes=15,\n                                               random_state=42))])"
+  },
+  "submission_out_of_bounds": 0,
+  "student_id_metadata_update": {
+    "date": "2026-10-20",
+    "previous": "7114056XXX",
+    "current": "7114056093",
+    "note": "僅更新識別資料，保留原始實驗結果與執行環境。"
+  }
+}

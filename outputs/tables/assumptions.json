@@ -1,0 +1,15 @@
+{
+  "diagnostic_n": 80000,
+  "breusch_pagan_lm": 3464.676489156044,
+  "breusch_pagan_p": 0.0,
+  "breusch_pagan_f_p": 0.0,
+  "durbin_watson": 2.002697021303836,
+  "jarque_bera": 10280.326532150557,
+  "jarque_bera_p": 0.0,
+  "residual_skew": 0.704911586271026,
+  "residual_kurtosis": 4.047137327101193,
+  "max_vif": 1.004336348091196,
+  "max_absolute_feature_correlation": 0.02432411524602922,
+  "rank": 21,
+  "condition_number": 265.440609893288
+}

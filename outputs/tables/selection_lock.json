@@ -1,0 +1,25 @@
+{
+  "primary": "LR_All",
+  "overall_cv_winner": "HGB_Summary",
+  "diagnostic_models": [
+    "LR_All",
+    "LR_KBest_15",
+    "LR_RFE_15",
+    "LR_LassoSelect",
+    "Ridge_0.1",
+    "Lasso_1e-05",
+    "HGB_Summary"
+  ],
+  "selection_rule": "僅依訓練子樣本五折 CV RMSE；主要模型限制為 LinearRegression。",
+  "locked_at_utc": "2026-10-19T09:59:30.177533+00:00",
+  "test_accessed": false,
+  "parameters": {
+    "LR_All": "Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),\n                ('scaler', StandardScaler()), ('selector', 'passthrough'),\n                ('model', LinearRegression())])",
+    "LR_KBest_15": "Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),\n                ('scaler', StandardScaler()),\n                ('selector',\n                 SelectKBest(k=15,\n                             score_func=<function f_regression at 0x7f041bcf5670>)),\n                ('model', LinearRegression())])",
+    "LR_RFE_15": "Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),\n                ('scaler', StandardScaler()),\n                ('selector',\n                 RFE(estimator=LinearRegression(), n_features_to_select=15,\n                     step=5)),\n                ('model', LinearRegression())])",
+    "LR_LassoSelect": "Pipeline(steps=[('selector', LassoCVSelector()),\n                ('imputer', SimpleImputer(strategy='median')),\n                ('scaler', StandardScaler()), ('model', LinearRegression())])",
+    "Ridge_0.1": "Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),\n                ('scaler', StandardScaler()), ('selector', 'passthrough'),\n                ('model', Ridge(alpha=0.1))])",
+    "Lasso_1e-05": "Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),\n                ('scaler', StandardScaler()), ('selector', 'passthrough'),\n                ('model', Lasso(alpha=1e-05, max_iter=10000))])",
+    "HGB_Summary": "Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),\n                ('summary', AddRowSummary()),\n                ('model',\n                 HistGradientBoostingRegressor(early_stopping=False,\n                                               l2_regularization=10,\n                                               learning_rate=0.08, max_iter=140,\n                                               max_leaf_nodes=15,\n                                               random_state=42))])"
+  }
+}

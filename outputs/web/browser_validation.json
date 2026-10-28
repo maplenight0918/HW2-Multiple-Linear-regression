@@ -1,0 +1,161 @@
+{
+  "base_url": "http://127.0.0.1:8012",
+  "checks": [
+    {
+      "check": "Flood 真實指標",
+      "status": "PASS",
+      "evidence": "RMSE=0.02008，主要模型 LR_All"
+    },
+    {
+      "check": "flood 圖表",
+      "status": "PASS",
+      "evidence": [
+        {
+          "id": "actual-chart",
+          "width": 493,
+          "height": 270,
+          "datasets": 2,
+          "valid": true
+        },
+        {
+          "id": "residual-chart",
+          "width": 493,
+          "height": 270,
+          "datasets": 2,
+          "valid": true
+        },
+        {
+          "id": "interval-chart",
+          "width": 1046,
+          "height": 300,
+          "datasets": 4,
+          "valid": true
+        },
+        {
+          "id": "model-chart",
+          "width": 493,
+          "height": 270,
+          "datasets": 2,
+          "valid": true
+        },
+        {
+          "id": "coefficient-chart",
+          "width": 493,
+          "height": 270,
+          "datasets": 1,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "check": "flood 預測工具",
+      "status": "PASS",
+      "evidence": "訓練代表值與公式一致；空白輸入阻止預測。"
+    },
+    {
+      "check": "flood 手機排版",
+      "status": "PASS",
+      "evidence": "390 px，頁面無水平溢出"
+    },
+    {
+      "check": "housing 圖表",
+      "status": "PASS",
+      "evidence": [
+        {
+          "id": "actual-chart",
+          "width": 493,
+          "height": 270,
+          "datasets": 2,
+          "valid": true
+        },
+        {
+          "id": "residual-chart",
+          "width": 493,
+          "height": 270,
+          "datasets": 2,
+          "valid": true
+        },
+        {
+          "id": "interval-chart",
+          "width": 1046,
+          "height": 300,
+          "datasets": 4,
+          "valid": true
+        },
+        {
+          "id": "model-chart",
+          "width": 493,
+          "height": 270,
+          "datasets": 2,
+          "valid": true
+        },
+        {
+          "id": "coefficient-chart",
+          "width": 493,
+          "height": 270,
+          "datasets": 1,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "check": "housing 預測工具",
+      "status": "PASS",
+      "evidence": "訓練代表值與公式一致；空白輸入阻止預測。"
+    },
+    {
+      "check": "housing 手機排版",
+      "status": "PASS",
+      "evidence": "390 px，頁面無水平溢出"
+    },
+    {
+      "check": "老師指定 CSV 網址端到端分析",
+      "status": "PASS",
+      "evidence": {
+        "split": {
+          "train": 21,
+          "calibration": 19,
+          "test": 10
+        },
+        "primary": "LR_KBest_2",
+        "interval": {
+          "q": 18431.045364615595,
+          "nominal_coverage": 0.95,
+          "coverage": 0.9,
+          "average_width": 36862.09072923119,
+          "calibration_n": 19,
+          "quantile_rank": 19,
+          "below_zero": 0,
+          "above_one": null
+        },
+        "models": 10
+      }
+    },
+    {
+      "check": "變更特徵後使舊結果失效",
+      "status": "PASS",
+      "evidence": "必須重新分析，不能顯示過期的預測圖"
+    },
+    {
+      "check": "CSV 檔案上傳",
+      "status": "PASS",
+      "evidence": "50 筆資料正確解析；Target=Profit"
+    },
+    {
+      "check": "非法網址錯誤處理",
+      "status": "PASS",
+      "evidence": "拒絕讀取內部網路；隱藏舊資料設定"
+    },
+    {
+      "check": "瀏覽器 JavaScript",
+      "status": "PASS",
+      "evidence": "零 pageerror"
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "/tmp/hw2-desktop.png",
+    "/tmp/hw2-mobile-flood.png",
+    "/tmp/hw2-mobile-housing.png"
+  ]
+}

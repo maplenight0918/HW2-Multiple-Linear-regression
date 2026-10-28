@@ -1,0 +1,39 @@
+{
+  "original_shape": [
+    21613,
+    21
+  ],
+  "analysis_rows": 21436,
+  "features": [
+    "date",
+    "bedrooms",
+    "bathrooms",
+    "sqft_living",
+    "sqft_lot",
+    "floors",
+    "waterfront",
+    "view",
+    "condition",
+    "grade",
+    "sqft_above",
+    "sqft_basement",
+    "yr_built",
+    "yr_renovated",
+    "zipcode",
+    "lat",
+    "long",
+    "sqft_living15",
+    "sqft_lot15"
+  ],
+  "missing": 0,
+  "duplicate_id": 177,
+  "provenance": {
+    "python": "3.9.12",
+    "selection_rule": "訓練內五折 CV RMSE，主模型限定 LinearRegression",
+    "test_used_for_selection": false,
+    "dataset_version": "harlfoxem/housesalesprediction v1",
+    "download": "https://www.kaggle.com/api/v1/datasets/download/harlfoxem/housesalesprediction?datasetVersionNumber=1",
+    "sha256": "d0875baa0251b21d4bdc9d2ae940a4fe0bb6009824f23dd0e2a5b2bf04557b7e",
+    "license": "CC0: Public Domain（Kaggle API）"
+  }
+}

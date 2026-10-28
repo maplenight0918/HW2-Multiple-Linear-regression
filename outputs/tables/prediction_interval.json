@@ -1,0 +1,13 @@
+{
+  "method": "Split conformal, absolute residual, finite-sample quantile",
+  "nominal_coverage": 0.95,
+  "q": 0.04005815443018501,
+  "quantile_rank": 169931,
+  "calibration_n": 178873,
+  "test_n": 223592,
+  "coverage": 0.9496672510644388,
+  "average_width": 0.08011630886037002,
+  "prediction_out_of_bounds": 0,
+  "lower_out_of_bounds": 0,
+  "upper_out_of_bounds": 0
+}

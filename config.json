@@ -1,0 +1,13 @@
+{
+  "student_id": "7114056093",
+  "seed": 42,
+  "target": "FloodProbability",
+  "id_column": "id",
+  "test_size": 0.2,
+  "calibration_fraction_of_development": 0.2,
+  "cv_sample_size": 80000,
+  "cv_folds": 5,
+  "nominal_coverage": 0.95,
+  "dataset_version": "johnwicknice/playground-series version 1, 2024-05-18",
+  "mirror_download": "https://www.kaggle.com/api/v1/datasets/download/johnwicknice/playground-series?datasetVersionNumber=1"
+}

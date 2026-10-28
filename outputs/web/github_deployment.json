@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-28T01:03:08.855042+00:00",
+  "repository": "https://github.com/maplenight0918/HW2-Multiple-Linear-regression",
+  "site_url": "https://maplenight0918.github.io/HW2-Multiple-Linear-regression/",
+  "repository_pushed": false,
+  "pages_verified": false,
+  "error": "GitHub CLI 已安裝並實際執行 auth status：尚未登入 GitHub；沒有可用推送／Pages 設定憑證。",
+  "repository_exists": true,
+  "repository_http_status": 200,
+  "remote_size": 0,
+  "pages_http_status": 404
+}
